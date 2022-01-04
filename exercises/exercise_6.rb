@@ -24,7 +24,7 @@ puts "----------"
 # Create them through the @store# instance variables that you defined in previous exercises. Create a bunch under @store1 (Burnaby) and @store2 (Richmond). Eg: @store1.employees.create(...).
 
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
-@store2.employees.create(first_name: "Kevin", last_name: "Mason", hourly_rate: 1000060)
+@store2.employees.create(first_name: "Kevin", last_name: "Mason", hourly_rate: 100)
 @store5 = Store.find_by(id:5)
-@store5.employees.create(first_name: "Robert", last_name: "Mason", hourly_rate: 10)
-@store5.employees.create(first_name: "Natalie", last_name: "Mason", hourly_rate: 11)
+@store5.employees.create(first_name: "Robert", last_name: "Mason", hourly_rate: 40)
+@store5.employees.create(first_name: "Natalie", last_name: "Mason", hourly_rate: 41)

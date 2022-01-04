@@ -11,6 +11,8 @@ puts "----------"
 
 # Your code goes here ...
 
+@store1.employees.create( last_name: "Wolff", hourly_rate: 60)
+
 # Exercise 7: Validations for both models
 # Add validations to two models to enforce the following business rules:
 # Employees must always have a first name present
@@ -20,4 +22,7 @@ puts "----------"
 # Stores must always have a name that is a minimum of 3 characters
 # Stores have an annual_revenue that is a number (integer) that must be 0 or more
 
+#some tests that shouldnt show up
 
+store = Store.create(name: "Hastings and Main", annual_revenue: 0, mens_apparel: true, womens_apparel:false)
+store.save
