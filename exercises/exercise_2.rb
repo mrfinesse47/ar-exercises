@@ -5,3 +5,7 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
+
+# david = User.find_by(name: 'David')
+
+
