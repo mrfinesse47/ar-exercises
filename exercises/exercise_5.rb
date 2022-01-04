@@ -14,3 +14,8 @@ puts "----------"
 
 
 # Your code goes here ...
+
+puts "total revenue for entire company $#{Store.sum(:annual_revenue)}"
+puts "average revenue per store $#{Store.average(:annual_revenue)}"
+@high_earning_stores_count = Store.where("annual_revenue>1000000").count
+puts "stores earnong more than 1 million:" + @high_earning_stores_count.to_s
